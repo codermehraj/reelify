@@ -12,6 +12,8 @@
     "deploy": "node deploy.mjs"
   },
   "dependencies": {
+    "@ant-design/cssinjs": "^1.18.4",
+    "@nextui-org/react": "^2.2.9",
     "@remotion/bundler": "^4.0.77",
     "@remotion/cli": "^4.0.77",
     "@remotion/google-fonts": "^4.0.77",
@@ -19,6 +21,8 @@
     "@remotion/paths": "^4.0.77",
     "@remotion/player": "^4.0.77",
     "@remotion/shapes": "^4.0.77",
+    "antd": "^5.14.1",
+    "framer-motion": "^11.0.5",
     "next": "14.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
