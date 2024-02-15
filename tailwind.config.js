@@ -14,6 +14,20 @@ module.exports = {
   theme: {
     extend: {},
   },
-  darkMode: "class",
-  plugins: [nextui()],
+  darkMode: "class",  
+  plugins: [
+    nextui(),
+    function({ addUtilities }) {
+      const newUtilities = {
+        '.hide-scrollbar': {
+          'scrollbar-width': 'none', /* For Firefox */
+          '-ms-overflow-style': 'none', /* For Internet Explorer and Edge */
+          '&::-webkit-scrollbar': {
+            display: 'none', /* For Chrome, Safari and Opera */
+          },
+        },
+      }
+      addUtilities(newUtilities)
+    }
+  ],
 }
